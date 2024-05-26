@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  .results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .results-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .results-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .results-card p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .results-card .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: #667eea;
+    border: none;
+  }
+
+  .results-card .btn:hover {
+    background: #556cd6;
+  }
+
+  .quote-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    font-style: italic;
+    color: #d1d1e0;
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('{{ url_for('static', filename='images/background.jpg') }}');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -2;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+</style>
+
+<div class="background-image"></div>
+<div class="overlay"></div>
+<div class="results-container">
+  <div class="results-card">
+    <p>Your overall personality trait score is: <strong>{{ overall_score }}</strong></p>
+    <p>Your detailed personality trait scores are:</p>
+    <ul>
+      <li>Extraversion: <strong>{{ scores.extraversion }}%</strong></li>
+      <li>Agreeableness: <strong>{{ scores.agreeableness }}%</strong></li>
+      <li>Conscientiousness: <strong>{{ scores.conscientiousness }}%</strong></li>
+      <li>Neuroticism: <strong>{{ scores.neuroticism }}%</strong></li>
+      <li>Openness: <strong>{{ scores.openness }}%</strong></li>
+    </ul>
+    <div class="quote-box">
+      <p id="quote"></p>
+    </div>
+    <a class="btn btn-primary mt-4" href="{{ url_for('index') }}">Back to Home</a>
+  </div>
+</div>
+
+<script>
+  const quotes = [
+    "The greatest discovery of my generation is that a human being can alter his life by altering his attitudes. - William James",
+    "The mind is everything. What you think you become. - Buddha",
+    "Knowing yourself is the beginning of all wisdom. - Aristotle",
+    "The unexamined life is not worth living. - Socrates",
+    "Your visions will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes. - Carl Jung"
+  ];
+
+  let quoteIndex = 0;
+  const quoteElement = document.getElementById('quote');
+
+  function showNextQuote() {
+    quoteElement.style.opacity = 0; // Start fade out
+    setTimeout(() => {
+      quoteElement.textContent = quotes[quoteIndex]; // Change quote
+      quoteElement.style.opacity = 1; // Start fade in
+      quoteIndex = (quoteIndex + 1) % quotes.length; // Update index
+    }, 1000); // Wait for fade out to complete
+  }
+
+  setInterval(showNextQuote, 5000); // Change quote every 5 seconds
+
+  // Initialize first quote
+  showNextQuote();
+</script>
+{% endblock %}
+
+
+

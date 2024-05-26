@@ -1,0 +1,107 @@
+[
+    {"id": "extraversion_1", "text": "I am the life of the party.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "extraversion_2", "text": "I don't mind being the center of attention.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "extraversion_3", "text": "I feel comfortable around people.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "agreeableness_1", "text": "I feel others' emotions.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "agreeableness_2", "text": "I am interested in people.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "agreeableness_3", "text": "I sympathize with others' feelings.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "conscientiousness_1", "text": "I am always prepared.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "conscientiousness_2", "text": "I pay attention to details.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "conscientiousness_3", "text": "I like order.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "neuroticism_1", "text": "I get stressed out easily.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "neuroticism_2", "text": "I worry about things.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "neuroticism_3", "text": "I am easily disturbed.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "openness_1", "text": "I have a vivid imagination.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "openness_2", "text": "I am full of ideas.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]},
+    {"id": "openness_3", "text": "I love to think up new ways of doing things.", "options": [
+        {"value": "5", "text": "Strongly Agree"},
+        {"value": "4", "text": "Agree"},
+        {"value": "3", "text": "Neutral"},
+        {"value": "2", "text": "Disagree"},
+        {"value": "1", "text": "Strongly Disagree"}
+    ]}
+]

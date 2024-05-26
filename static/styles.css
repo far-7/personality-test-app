@@ -1,0 +1,124 @@
+body {
+    padding-top: 56px;
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin: auto;
+    max-width: 800px;
+    background-color: #282626;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*.card-header {
+    background-image: url('{{ url_for('static', filename='images/personality.jpg.tiff') }}');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}*/
+
+.card-title {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+}
+
+.embed-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+}
+
+
+.navbar {
+    background-color: #007bff !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #d4d4d4 !important;
+}
+
+.jumbotron {
+    background-color: #76bfea;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.jumbotron .display-4 {
+    font-weight: 300;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.embed-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(122, 183, 227, 0.291);
+}
+/* Text background styling */
+.text-background {
+    background-color: rgba(81, 63, 63, 0.8); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.card {
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .custom-control-label::before, .custom-control-label::after {
+    top: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+  }
+  
+  .custom-control-label::before {
+    border-width: 2px;
+  }
+  
+  .form-check {
+    padding-left: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  hr {
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .text-center {
+    text-align: center;
+  }

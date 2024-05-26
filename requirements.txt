@@ -1,0 +1,5 @@
+flask
+flask-bootstrap
+numpy
+pandas
+scikit-learn

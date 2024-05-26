@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron text-center shadow-lg p-3 mb-5 bg-white rounded" style background-color: rgba(255, 255, 255, 0.8);>
+  <div class="text-background" style  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;></style>
+    <h1 class="display-4">Welcome to Mind Harmony Hub</h1>
+    <p class="lead">Your go-to platform for mental health and well-being.</p>
+  </div>
+  <hr class="my-4">
+  <div class="embed-responsive embed-responsive-16by9 mb-4">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ij7RyWMVF-k?feature=shared" allowfullscreen></iframe>
+  </div>
+  <p>Take our personality test to gain insights into your personality type.</p>
+  <a class="btn btn-primary btn-lg" href="{{ url_for('personality_test') }}" role="button">Take the Test</a>
+</div>
+<div class="quote-container text-center my-4">
+  <blockquote class="blockquote">
+    <p id="daily-quote"></p>
+  </blockquote>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const quotes = [
+      "The only way to do great work is to love what you do. - Steve Jobs",
+      "Believe you can and you're halfway there. - Theodore Roosevelt",
+      "You are never too old to set another goal or to dream a new dream. - C.S. Lewis",
+      "What lies behind us and what lies before us are tiny matters compared to what lies within us. - Ralph Waldo Emerson"
+    ];
+    
+    const quoteElement = document.getElementById("daily-quote");
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    quoteElement.textContent = randomQuote;
+  });
+</script>
+{% endblock %}
